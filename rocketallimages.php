@@ -37,7 +37,11 @@ class rocketallimages extends Module
 
     public function uninstall()
     {
-        return parent::uninstall();
+        if (!parent::uninstall() ||
+            !Configuration::deleteByName('ROCKET_ALLIMAGES_ORDERED')) {
+            return false;
+        }
+        return true;
     }
 
     public function getContent()
