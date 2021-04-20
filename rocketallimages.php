@@ -60,7 +60,7 @@ class rocketallimages extends Module
                     array(
                         'type' => 'switch',
                         'label' => $this->trans('Display combinations image(s) First?', array(), 'Modules.rocketallimages.Admin'),
-                        'desc' => $this->trans('If enbled, this take more ressources.', array(), 'Modules.rocketallimages.Admin'),
+                        'desc' => $this->trans('If enabled, this use more resources.', array(), 'Modules.rocketallimages.Admin'),
                         'name' => 'ROCKET_ALLIMAGES_ORDERED',
                         'values' => array(
                             array(
